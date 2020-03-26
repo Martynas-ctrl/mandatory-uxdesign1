@@ -1,0 +1,27 @@
+.input {
+  height: 30px;
+  width: 30px;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid grey
+}
+
+.input:checked:after {
+  content: '';
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 19%;
+  left: 19%;
+  background-color: #7289da;
+  border: 2px solid #7289da; 
+  border-radius: 10px;
+  transform: scale(1.1); 
+}
+
+.input:checked {
+  border: 2px solid #7289da;
+  transform: scale(1.1);
+}

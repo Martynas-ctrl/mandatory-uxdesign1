@@ -1,0 +1,73 @@
+.mainTextFields {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.inputEmail {
+  margin-bottom: 32px;
+  background-color: #f5f5f5;
+  width: 480px;
+}
+
+.inputPassword {
+  width: 480px;
+  background-color: #f5f5f5;
+}
+
+.floatingInput {
+  padding: 1.8em 1em 0.6em;
+  font-size: 15px;
+  border-bottom: 2px solid #7289da;
+  caret-color :#7289da ;
+}
+
+.floatingLabel {
+  display: block;
+  font-weight: 600;
+  max-height: 0;
+}
+
+.floatingInput::placeholder {
+  visibility: hidden;
+}
+
+.floatingLabel::before {
+  content: attr(data-content);
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  transform-origin: left top;
+  transition: 0.2s ease-in-out;
+}
+
+.floatingInput:placeholder-shown + .floatingLabel::before {
+  transform: translate3d(0, -2.5em, 0);
+}
+
+.floatingLabel::before,
+.floatingInput:focus + .floatingLabel::before {
+  transform: translate3d(0, -3.12em, 0) scale3d(0.80, 0.80, 1);
+}
+
+input {
+  background: none;
+  border-width: 0;
+  width: 448px;
+}
+
+.textFieldFooter {
+  margin-top: 192px;
+  width: 1000px;
+  height: 100px;
+  background-color: #7289da;
+}
+
+.buttonLogin {
+  background-color: #7289da;
+  color: white;
+  margin-top: 50px;
+  width: 480px;
+  height: 55px;
+}
