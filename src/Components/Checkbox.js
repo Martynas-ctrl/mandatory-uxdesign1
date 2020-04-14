@@ -58,6 +58,14 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
 `
 
 const StyledCheckbox = styled.div`
+${HiddenCheckbox}:focus + & {
+  box-shadow: 0 0 0 8px rgba(176, 198, 250, 0.5);
+  background-color: rgba(176, 198, 250, 0.5);
+}
+
+${HiddenCheckbox}:hover + & {
+  box-shadow: 0 0 0 7px rgba(222, 221, 251, 0.5);
+}
   display: inline-block;
   width: 16px;
   height: 16px;

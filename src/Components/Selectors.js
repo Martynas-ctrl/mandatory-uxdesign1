@@ -1,25 +1,41 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../Css/Selectors.css';
 import ToggleSwitch from './ToggleSwitch';
+import RadioButton from './RadioButton';
+import Checkbox from './Checkbox';
+import homeImg from '../Images/HomeImg.svg';
 
 class Selectors extends Component {
-
+    
     render() {
       return (
         <div className='container'>
           <header className='header'>
-            <h1 className='title'>Home</h1>
+            <h1 className='title'>Selectors</h1>
           </header>
-          <main>
-          <ToggleSwitch />
+          <main className='mainTextFields'>
+            <div className='inputEmail'>
+              <input class='floatingInput' name='input name' placeHolder='placeholdery'></input>
+              <label for='inputId' class='floatingLabel' data-content='Email'></label>
+            </div>
+            <div className='inputPassword'>
+              <input class='floatingInput' name='input name' placeholder='Placeholder'></input>
+              <label for='inputId' class='floatingLabel' data-content='Password'></label>
+            </div>
+            <label style={{ marginTop: 20 , display: 'flex' }}>
+              <Checkbox />
+              <span style={{ marginLeft: 10 }}>Save password</span>
+            </label>
+            <input className='buttonLogin' type='submit' value='Sign In'></input>
+              <RadioButton />
+              <ToggleSwitch />
           </main>
-          <footer>
-            <Link to='/TextFields'><p>TextFields</p></Link>
-            <Link to='/'><h2>Home</h2></Link>
-            <Link to ='/Selectors'><p>Selectors</p></Link>
-          </footer> 
+          <footer className='textFieldFooter'> 
+            <Link to='/'><img style={{width:'60px', height: '60px'}} src={homeImg}></img></Link> 
+          </footer>
         </div>
-       )
+        )
     }
 }
 

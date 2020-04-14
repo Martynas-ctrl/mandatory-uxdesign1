@@ -15,7 +15,7 @@ class Container extends Component {
             <img src={Image}></img>
           </main>
           <footer>   
-            <Link to='/TextFields'><img style={{width:'60px', height: '60px'}} src={SelectorsImg}></img></Link>
+            <Link to='/Selectors'><img style={{width:'60px', height: '60px'}} src={SelectorsImg}></img></Link>
           </footer> 
         </div>
         )

@@ -21,11 +21,11 @@ class RadioButton extends Component {
         <div>
           <label>
             <input className='input' type='radio' value='English' checked={this.state.checked === 'English'} onChange={this.onChangeRadioButton}/>
-            <span>English</span>
+            <span> English </span>
           </label>
           <label>
             <input className='input' type='radio' value='Swedish' checked={this.state.checked === 'Swedish'} onChange={this.onChangeRadioButton}/>
-            <span>Swedish</span>
+            <span> Swedish </span>
           </label>
         </div>
       )

@@ -1,4 +1,5 @@
 .input {
+  margin-top: 15px;
   height: 30px;
   width: 30px;
   -webkit-appearance: none;
@@ -24,4 +25,13 @@
 .input:checked {
   border: 2px solid #7289da;
   transform: scale(1.1);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 8px rgba(176, 198, 250, 0.5);
+  background-color: rgba(176, 198, 250, 0.5);
+}
+
+.input:hover {
+  box-shadow: 0 0 0 7px rgba(222, 221, 251, 0.5);
 }
